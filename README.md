@@ -1,0 +1,1 @@
+LineBot convert currency THB
