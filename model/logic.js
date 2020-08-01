@@ -20,7 +20,6 @@ module.exports = {
             headers: headers,
             body: body
         }, (err, res, body) => {
-            console.log('status = ' + res.statusCode);
         });
     },
     //exchange currency
@@ -34,11 +33,6 @@ module.exports = {
             if (isNaN(THBcurrent)) {
                 ReplyMsg = "Not Found"
             }
-            console.log("Rate = " + Rate)
-            console.log("THBcurrent = " + THBcurrent)
-            console.log("ReplyMsg = " + ReplyMsg)
-            console.log("ReplyToken = " + ReplyToken)
-            //return {ReplyToken,ReplyMsg}
             this.reply(ReplyToken, ReplyMsg)
         });
     }
