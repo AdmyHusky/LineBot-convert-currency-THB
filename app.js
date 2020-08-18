@@ -11,3 +11,12 @@ app.use(bodyParser.json())
 const router = require('./routes/router.js');
 app.use(router);
 app.listen(port)
+
+/*heroku login
+git init
+heroku git:remote -a line-hellobot-demo
+git add .
+git commit -m "Initial project"
+git push heroku master
+heroku ps:scale web=1
+*/
